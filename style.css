@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    font-family: poppins , sans-serif;
+    background-color: rgb(51, 7, 56);
+    color: white;
+}
+.container {
+    display: inline-flex;
+    flex-direction: row;
+
+  }
+  .name{
+    color: rgb(23, 207, 29);
+  }
+  .sidebar {
+    color: #ffffff;
+    width: 200px;
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+    transform: translateX(-210px); /* move sidebar off screen */
+    transition: transform 0.3s ease-in-out; /* add transition effect */
+  }
+  
+  .sidebar:hover {
+    transform: translateX(0); /* move sidebar into view on hover */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar li a {
+    display: block;
+    padding: 10px;
+    /* background-color: #ddd; */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .sidebar li a:hover {
+    background-color: #870dd8;
+    /* color: #fff; */
+    /* text-decoration: underline; */
+    /* text-decoration: 10px; */
+    /* border-bottom: 3px #ffffff solid;
+    border-bottom-right-radius: 100px; */
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  .bars{
+    float: right;
+    margin-left: 10px;
+  }
+  .sidebar:hover .bars{
+    visibility: hidden;
+  }
+  .social ul{
+    display: inline-flex;
+    list-style: none;
+    gap: 100px;
+    font-size: 30px;
+    margin-left: 630px;
+  }
+  .twitter:hover{
+        color: rgb(29, 29, 231);
+  }
+  .insta:hover{
+        color: rgb(231, 29, 224);
+  }
+  .git:hover{
+        color: rgb(0, 0, 0);
+  }
+.intro{
+  /* display: inline-flex; */
+  width: 800px;
+  /* display: flex; */
+  
+}
+.introduction{
+  /* display: inline-flex; */
+  width: 600px;
+}
+.img {
+  background-image: url("IMG20230214125403.jpg");
+  background-size: cover; 
+  height: 100px;
+  width: 100px;
+  /* background: rgb(26, 22, 22); */
+  padding: 50px;
+  margin-left: 30px;
+  border-radius: 50%;
+  float: right;
+  transition: .8s;
+}
+
+.learnings{
+  margin-top: 100px;
+     font-size: 50px;
+     transition: 2s;
+}
+.learnings  i{
+  margin-left: 270px;
+}
+.learnings i:hover{
+   animation: spin 2s linear;
+}
+@keyframes spin{
+  from {transform: rotateY(0deg);}
+  to{transform: rotateY(360deg);}
+}
+.html{
+  color: orangered;
+}
+.css{
+  color: blue;
+}
+.js{
+  color: yellow;
+}
+.social a{
+  color: #ffffff;
+}
